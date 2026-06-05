@@ -1,16 +1,48 @@
-# React + Vite
+# 🧗‍♂️ Clone da Página de Login - Arc'teryx
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![PRINT REFERENCIA](./assets/PRINT REFERENCIA.png))
 
-Currently, two official plugins are available:
+Este projeto é uma atividade prática desenvolvida para a **Residência em TIC do Serratec**. O objetivo principal foi recriar a interface da página de login do site oficial da marca **Arc'teryx**, aplicando conceitos fundamentais da biblioteca **React**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Tecnologias Utilizadas
 
-## React Compiler
+* **React** (via Vite)
+* **JavaScript** (ES6+)
+* **CSS3** (Estilização personalizada para fidelidade ao design original)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🎯 Objetivos da Atividade
 
-## Expanding the ESLint configuration
+A atividade consistiu em aplicar os hooks fundamentais do React para gerenciar o estado do formulário e simular o fluxo de autenticação:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Gerenciamento de Estado (`useState`):** Utilizado para capturar, armazenar e atualizar em tempo real os dados digitados nos campos de **login** (e-mail) e **senha**.
+* **Submissão de Formulário:** O botão "Continue" foi configurado como um tipo `submit`.
+* **Efeito Colateral (`useEffect`):** Ao clicar no botão e disparar o envio do formulário, um efeito é acionado para exibir os dados de login e senha diretamente no `console.log`.
+
+## 📦 Como rodar o projeto localmente
+
+Para testar o projeto no seu computador, siga os passos abaixo:
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com
+   ```
+
+2. **Entre na pasta do projeto:**
+   ```bash
+   cd nome-da-sua-pasta
+   ```
+
+3. **Instale as dependências:**
+   ```bash
+   npm install
+   ```
+
+4. **Inicie o servidor de desenvolvimento:**
+   ```bash
+   npm run dev
+   ```
+
+5. Abra o navegador no endereço indicado pelo terminal (geralmente `http://localhost:5173`) e abra o **Console do Desenvolvedor (F12)** para ver os dados sendo exibidos ao clicar em continuar.
+
+---
+🛋️ Desenvolvido durante a Residência do Serratec.
