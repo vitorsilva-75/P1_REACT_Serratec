@@ -1,6 +1,6 @@
 # 🧗‍♂️ Clone da Página de Login - Arc'teryx
 
-![PRINT REFERENCIA](./assets/PRINT REFERENCIA.png))
+![PRINT REFERENCIA](./src/assets/PRINT%20REFERENCIA.png)
 
 Este projeto é uma atividade prática desenvolvida para a **Residência em TIC do Serratec**. O objetivo principal foi recriar a interface da página de login do site oficial da marca **Arc'teryx**, aplicando conceitos fundamentais da biblioteca **React**.
 
