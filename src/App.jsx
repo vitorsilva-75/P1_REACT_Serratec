@@ -2,10 +2,9 @@ import { useState,useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
-import './App.css'
+import styles from './styles.module.css'
 
 function App() {
-  const [count, setCount] = useState(0);
   const [senha, setSenha] = useState('');
   const [email, setEmail] = useState('');
 
@@ -28,13 +27,13 @@ function App() {
 
 return (
     <>
-    <div className="imagem-fundo">
-        <img className="background" src="https://cdn.pixabay.com/photo/2020/10/11/09/04/peak-5645235_1280.jpg" alt="imagem de fundo"/>
+    <div className={styles["imagem-fundo"]}>
+        <img className={styles["background"]} src="https://cdn.pixabay.com/photo/2020/10/11/09/04/peak-5645235_1280.jpg" alt="imagem de fundo"/>
         
-        <section className="caixa-login">
-            <div className="bem-vindo">
-                <div className="img-logo">
-                    <img className="logo" src="https://cdn.worldvectorlogo.com/logos/arc-teryx.svg" alt="Logo"/>
+        <section className={styles["caixa-login"]}>
+            <div className={styles["bem-vindo"]}>
+                <div className={styles["img-logo"]}>
+                    <img className={styles["logo"]} src="https://cdn.worldvectorlogo.com/logos/arc-teryx.svg" alt="Logo"/>
                 </div>
                 <h3>Welcome</h3>
 
@@ -42,7 +41,7 @@ return (
             </div>
             
             <form action="/login" onSubmit={handleSubmit}>
-                <div className="input-login">
+                <div className={styles["input-login"]}>
                     <label htmlFor="email">Email address*</label>
                     <input type="email"
                             id="email"
@@ -54,7 +53,7 @@ return (
                     />
                 </div>
 
-                <div className="input-login">
+                <div className={styles["input-login"]}>
                     <label htmlFor="password">Password*</label>
                     <input type="password"
                             id="password"
@@ -66,13 +65,13 @@ return (
                     />
                 </div>
 
-                <div className="redefinicao">
+                <div className={styles["redefinicao"]}>
                     <a href="#">Forgot password?</a>
                 </div>
 
-                <button className="Continue" type="submit">Continue</button>
+                <button className={styles["Continue"]} type="submit">Continue</button>
 
-                <div className="rodape">
+                <div className={styles["rodape"]}>
                     <h3>Don't have an account?</h3>
                     <a href="#">Sign up</a>
                 </div>
